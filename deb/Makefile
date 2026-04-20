@@ -205,8 +205,6 @@ openssl111-debug-clean:
 
 .PHONY: openresty-download
 openresty-download:
-	rm -f *.orig.tar.*
-	wget -nH --cut-dirs=100 --mirror 'https://openresty.org/download/openresty-$(OR_VER).tar.gz'
 	cp openresty-$(OR_VER).tar.gz openresty_$(OR_VER).orig.tar.gz
 
 .PHONY: openresty-build
